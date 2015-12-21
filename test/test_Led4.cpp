@@ -8,9 +8,17 @@
 # include "gtest/gtest.h"
 # include "Led.h"
 
+/* TODO: Is there any way to know the number of states by referring to the UML class / state diagram?
+ * Reading all the states from the XML file can generate this value */
 #define NUM_OF_STATES                    4
+
+/* Definition to know the number of function calls to be done in each state
+ * Note: A function with 1 argument taking 4 possible values => 4 Methods
+ * TODO: Can this information be derived from UML diagram? */
 #define NUM_OF_METHODS                   6
 
+/* TODO: Class needs to be generated from the UML diagram
+ * Create a test class which is derived from a class belonging to the module under test */
 class TEST_LED: public LED
 {
 public:
@@ -79,6 +87,7 @@ TEST_LED::LED_STATE const TEST_LED::ValidNewState[NUM_OF_STATES][NUM_OF_METHODS]
 
 };
 
+/* TODO: Can this be represented in a sequence diagram */
 void TEST_LED::TestCode_IniSt_To_StUnderTest(void)
 {
 	switch(StateUnderTest)
@@ -212,6 +221,11 @@ void TEST_LED::TestCode_NewSt_To_StUnderTest(void)
 	}
 }
 
+/* TODO: How to generate this logic using UML diagram?
+ * The class contains the function information. Hence this could be generated from the class diagram
+ * Probably we would have to add some information into the class diagram about the possible values for
+ * parameters
+ * */
 void TEST_LED::TestCode_CallMethod(unsigned int m)
 {
 	switch(m)
