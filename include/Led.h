@@ -17,7 +17,6 @@ public:
 
 private:
 	LED_STATE CurrentState;
-	LED_STATE RequestedState;
 
 public:
 	LED();

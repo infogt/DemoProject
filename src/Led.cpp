@@ -9,7 +9,6 @@
 
 LED::LED(){
 	CurrentState = S_OFF;
-	RequestedState = S_OFF;
 }
 
 LED::~LED(){
