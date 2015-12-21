@@ -9,16 +9,25 @@
 # include "Led.h"
 
 #define NUM_OF_STATES                    4
-#define NUM_OF_METHODS                   2 // only testing On(), Off()
+#define NUM_OF_METHODS                   6
 
+#define WORKAROUND 						0
 
 class TEST_LED: public LED
 {
 public:
 	LED_STATE StateUnderTest;		// This is the state that is being tested
 	LED_STATE NewState;				// This is the state to which the transition occurs
-	LED_STATE ValidNewState[NUM_OF_STATES][NUM_OF_METHODS];
 
+	// Below are some workarounds, refer the below definitions
+#if (WORKAROUND == 0)
+	LED_STATE ValidNewState[NUM_OF_STATES][NUM_OF_METHODS];
+#elif (WORKAROUND == 1)
+	static LED_STATE const ValidNewState[NUM_OF_STATES][NUM_OF_METHODS];
+#else
+	LED_STATE ValidNewState[NUM_OF_STATES][NUM_OF_METHODS];
+	TEST_LED();
+#endif
 	void TestCode_IniSt_To_StUnderTest(void);
 	void TestCode_NewSt_To_StUnderTest(void);
 	void TestCode_CallMethod(unsigned int m);
@@ -40,11 +49,97 @@ public:
  *  S_BLINK_2S	|   S_BLINK_2S  |     S_ON		|	S_BLINK_2S	|	S_BLINK_1S 	|	S_BLINK_2S	|	S_BLINK_2S  |
  * 	------------|---------------|---------------|---------------|---------------|---------------|---------------|
 */
+#if (WORKAROUND == 0)
+/* This array definition is not working as expected.
+ * Hence initialization of the array is done within the constructor
+ *
+ * TODO: Update the array definition and remove the code in the constructor
+ */
 TEST_LED::LED_STATE ValidNewState[NUM_OF_STATES][NUM_OF_METHODS] =
 {
-		TEST_LED::S_OFF, TEST_LED::S_ON, TEST_LED::S_OFF, TEST_LED::S_ON,
-		TEST_LED::S_BLINK_1S, TEST_LED::S_ON, TEST_LED::S_BLINK_2S, TEST_LED::S_ON
+	{ TEST_LED::S_OFF, TEST_LED::S_ON },
+	{ TEST_LED::S_OFF, TEST_LED::S_ON },
+	{ TEST_LED::S_BLINK_1S, TEST_LED::S_ON },
+	{ TEST_LED::S_BLINK_2S, TEST_LED::S_ON }
 };
+#elif (WORKAROUND == 1)
+TEST_LED::LED_STATE const TEST_LED::ValidNewState[NUM_OF_STATES][NUM_OF_METHODS] =
+{
+	{
+		S_OFF,
+		S_ON,
+		S_OFF,
+		S_OFF,
+		S_OFF,
+		S_OFF
+	},
+
+	{
+		S_OFF,
+		S_ON,
+		S_ON,
+		S_BLINK_1S,
+		S_BLINK_2S,
+		S_ON
+	},
+
+	{
+		S_BLINK_1S,
+		S_ON,
+		S_BLINK_1S,
+		S_BLINK_1S,
+		S_BLINK_2S,
+		S_BLINK_1S
+	},
+
+	{
+		S_BLINK_2S,
+		S_ON,
+		S_BLINK_2S,
+		S_BLINK_1S,
+		S_BLINK_2S,
+		S_BLINK_2S
+	},
+
+};
+
+#else
+TEST_LED::TEST_LED()
+{
+	// Initialization done just to remove compiler warning
+	StateUnderTest = S_OFF;
+	NewState	   = S_OFF;
+
+	/* Workaround as array definition with states gave some problem */
+	ValidNewState[0][0] = S_OFF;
+	ValidNewState[0][1] = S_ON;
+	ValidNewState[0][2] = S_OFF;
+	ValidNewState[0][3] = S_OFF;
+	ValidNewState[0][4] = S_OFF;
+	ValidNewState[0][5] = S_OFF;
+
+	ValidNewState[1][0] = S_OFF;
+	ValidNewState[1][1] = S_ON;
+	ValidNewState[1][2] = S_ON;
+	ValidNewState[1][3] = S_BLINK_1S;
+	ValidNewState[1][4] = S_BLINK_2S;
+	ValidNewState[1][5] = S_ON;
+
+	ValidNewState[2][0] = S_BLINK_1S;
+	ValidNewState[2][1] = S_ON;
+	ValidNewState[2][2] = S_BLINK_1S;
+	ValidNewState[2][3] = S_BLINK_1S;
+	ValidNewState[2][4] = S_BLINK_2S;
+	ValidNewState[2][5] = S_BLINK_1S;
+
+	ValidNewState[3][0] = S_BLINK_2S;
+	ValidNewState[3][1] = S_ON;
+	ValidNewState[3][2] = S_BLINK_2S;
+	ValidNewState[3][3] = S_BLINK_1S;
+	ValidNewState[3][4] = S_BLINK_2S;
+	ValidNewState[3][5] = S_BLINK_2S;
+}
+#endif
 
 void TEST_LED::TestCode_IniSt_To_StUnderTest(void)
 {
@@ -74,6 +169,9 @@ void TEST_LED::TestCode_IniSt_To_StUnderTest(void)
 	}
 }
 
+/* TODO: Logic to be changed in this function to optimize it and
+ * readable when more states are there in the system
+ */
 void TEST_LED::TestCode_NewSt_To_StUnderTest(void)
 {
 	switch(NewState)
@@ -97,6 +195,9 @@ void TEST_LED::TestCode_NewSt_To_StUnderTest(void)
 					On();
 					Blink(2);
 					break;
+
+				default:
+					break;
 			}
 			break;
 
@@ -116,6 +217,9 @@ void TEST_LED::TestCode_NewSt_To_StUnderTest(void)
 
 				case S_BLINK_2S:
 					Blink(2);
+					break;
+
+				default:
 					break;
 			}
 			break;
@@ -138,6 +242,9 @@ void TEST_LED::TestCode_NewSt_To_StUnderTest(void)
 				case S_BLINK_2S:
 					Blink(2);
 					break;
+
+				default:
+					break;
 			}
 			break;
 
@@ -158,6 +265,9 @@ void TEST_LED::TestCode_NewSt_To_StUnderTest(void)
 					break;
 
 				case S_BLINK_2S:
+					break;
+
+				default:
 					break;
 			}
 			break;
@@ -189,7 +299,6 @@ void TEST_LED::TestCode_CallMethod(unsigned int m)
 	}
 }
 
-
 TEST(LED_TEST_OPTION_4, TEST_CASES)
 {
 	printf("\n---------------------------------------------------------------");
@@ -197,7 +306,6 @@ TEST(LED_TEST_OPTION_4, TEST_CASES)
 	printf("\n---------------------------------------------------------------");
 	printf("\n");
 }
-
 
 TEST(LED_TEST_LED_STATE, all)
 {
