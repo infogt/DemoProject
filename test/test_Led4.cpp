@@ -27,7 +27,6 @@ public:
 	static LED_STATE const ValidNewState[NUM_OF_STATES][NUM_OF_METHODS];
 
 	void TestCode_IniSt_To_StUnderTest(void);
-	void TestCode_NewSt_To_StUnderTest(void);
 	void TestCode_CallMethod(unsigned int m);
 };
 
@@ -116,111 +115,6 @@ void TEST_LED::TestCode_IniSt_To_StUnderTest(void)
 	}
 }
 
-/* TODO: Logic to be changed in this function to optimize it and
- * readable when more states are there in the system
- */
-void TEST_LED::TestCode_NewSt_To_StUnderTest(void)
-{
-	switch(NewState)
-	{
-		case S_OFF:
-			switch(StateUnderTest)
-			{
-				case S_OFF:
-					break;
-
-				case S_ON:
-					On();
-					break;
-
-				case S_BLINK_1S:
-					On();
-					Blink(1);
-					break;
-
-				case S_BLINK_2S:
-					On();
-					Blink(2);
-					break;
-
-				default:
-					break;
-			}
-			break;
-
-		case S_ON:
-			switch(StateUnderTest)
-			{
-				case S_OFF:
-					Off();
-					break;
-
-				case S_ON:
-					break;
-
-				case S_BLINK_1S:
-					Blink(1);
-					break;
-
-				case S_BLINK_2S:
-					Blink(2);
-					break;
-
-				default:
-					break;
-			}
-			break;
-
-		case S_BLINK_1S:
-			switch(StateUnderTest)
-			{
-				case S_OFF:
-					On();
-					Off();
-					break;
-
-				case S_ON:
-					On();
-					break;
-
-				case S_BLINK_1S:
-					break;
-
-				case S_BLINK_2S:
-					Blink(2);
-					break;
-
-				default:
-					break;
-			}
-			break;
-
-		case S_BLINK_2S:
-			switch(StateUnderTest)
-			{
-				case S_OFF:
-					On();
-					Off();
-					break;
-
-				case S_ON:
-					On();
-					break;
-
-				case S_BLINK_1S:
-					Blink(1);
-					break;
-
-				case S_BLINK_2S:
-					break;
-
-				default:
-					break;
-			}
-			break;
-	}
-}
-
 /* TODO: How to generate this logic using UML diagram?
  * The class contains the function information. Hence this could be generated from the class diagram
  * Probably we would have to add some information into the class diagram about the possible values for
@@ -277,10 +171,16 @@ TEST(LED_TEST_LED_STATE, all)
 			// Check if the new state is as expected
 			// i.e., moved to new state or remain in current state
 			EXPECT_EQ(Test.ValidNewState[s][m], Test.GetCurrentState());
-
-			// If new state is not the state under test, move to state under test
-			Test.NewState = Test.GetCurrentState();
-			Test.TestCode_NewSt_To_StUnderTest();
 		}
 	}
 }
+
+
+/*
+ * Topics not considered during the design of this test code:
+ *
+ * - Assumption: NUM_OF_STATES can be derived directly from a class in the UML diagram
+ * - the macro NUM_OF_METHODS is the number of function calls to be done in each state
+ *   Note: A function with 1 argument taking 4 possible values => 4 Methods
+ * - the macro NUM_OF_METHODS considers only those macros that trigger a change in state
+ * */
