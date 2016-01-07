@@ -17,6 +17,9 @@
  * TODO: Can this information be derived from UML diagram? */
 #define NUM_OF_METHODS                   6
 
+/* Method to read the current state */
+#define TESTCODE_GET_CURRENT_STATE       GetCurrentState
+
 /* TODO: Class needs to be generated from the UML diagram
  * Create a test class which is derived from a class belonging to the module under test */
 class TEST_LED: public LED
@@ -86,7 +89,7 @@ TEST_LED::LED_STATE const TEST_LED::ValidNewState[NUM_OF_STATES][NUM_OF_METHODS]
 
 };
 
-/* TODO: Can this be represented in a sequence diagram */
+/* TODO: Can this be represented in a sequence diagram? */
 void TEST_LED::TestCode_IniSt_To_StUnderTest(void)
 {
 	switch(StateUnderTest)
@@ -170,7 +173,7 @@ TEST(LED_TEST_LED_STATE, all)
 
 			// Check if the new state is as expected
 			// i.e., moved to new state or remain in current state
-			EXPECT_EQ(Test.ValidNewState[s][m], Test.GetCurrentState());
+			EXPECT_EQ(Test.ValidNewState[s][m], Test.TESTCODE_GET_CURRENT_STATE());
 		}
 	}
 }
