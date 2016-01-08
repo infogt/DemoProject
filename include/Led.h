@@ -12,7 +12,7 @@
 class LED
 {
 public:
-	enum LED_STATE {S_OFF, S_ON, S_BLINK_1S, S_BLINK_2S};
+	enum LED_STATE {S_BLINK_1S=0, S_BLINK_2S=1, S_OFF=2, S_ON=3 };
 	enum LED_FN_STATUS {E_OK, E_NOT_OK};
 
 private:

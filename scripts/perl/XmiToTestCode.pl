@@ -10,13 +10,13 @@ use List::MoreUtils qw(uniq);
 #------------------------------------------------------------
 
 # Specify the XML file
-my $file = "C:/RubensFolder/WorkArea/EA_WS/05_WorkingCopy/XML/Workingcopy.xml";
+my $file = "../eap/LightModule.xml";
 
 # Specify the template file
-my $fileTemplate = "test_Led4.cppt";
+my $fileTemplate = "test_Led_generated.cppt";
 
 # Specify output folder
-my $dirOutput = "output";
+my $dirOutput = "../../test/";
 
 my @LightModuleStates;
 my $LightModuleNumOfStates;
@@ -188,7 +188,8 @@ foreach(@templateLines)
 	$_ =~ s/<METHOD_TestCode_CallMethod>/$Method_TestCode_CallMethod/g;	
 }
 
-mkdir "$dirOutput" unless(-d $dirOutput) or die "Unable to create directory $dirOutput\n";
+# Directory already exists in the repo
+#mkdir "$dirOutput" unless(-d $dirOutput) or die "Unable to create directory $dirOutput\n";
 
 my $fileOutput = substr($fileTemplate, 0, -1);
 open(FILE, ">$dirOutput/$fileOutput") or die "Could not create file '$fileOutput' $!";
