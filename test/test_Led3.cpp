@@ -8,16 +8,8 @@
 # include "gtest/gtest.h"
 # include "Led.h"
 
-TEST(LED_TEST_OPTION_3, TEST_CASES)
-{
-	printf("\n---------------------------------------------------------------");
-	printf("\n                   OPTION 3                                    ");
-	printf("\n---------------------------------------------------------------");
-	printf("\n");
-}
 
-
-TEST(TC_LED_SID1_1_2_POS, 01)
+TEST(LED_TEST_OPTION_3_TC_LED_SID1_1_2_POS, 01)
 {
 	LED Test;
 
@@ -25,7 +17,7 @@ TEST(TC_LED_SID1_1_2_POS, 01)
 	EXPECT_EQ(Test.S_ON, Test.GetCurrentState());
 }
 
-TEST(TC_LED_SID1_1_0_1_NEG, 02)
+TEST(LED_TEST_OPTION_3_TC_LED_SID1_1_0_1_NEG, 02)
 {
 	LED Test;
 
@@ -33,7 +25,7 @@ TEST(TC_LED_SID1_1_0_1_NEG, 02)
 	EXPECT_EQ(Test.S_OFF, Test.GetCurrentState());
 }
 
-TEST(TC_LED_SID1_1_0_1_NEG, 03)
+TEST(LED_TEST_OPTION_3_TC_LED_SID1_1_0_1_NEG, 03)
 {
 	LED Test;
 
@@ -41,7 +33,7 @@ TEST(TC_LED_SID1_1_0_1_NEG, 03)
 	EXPECT_EQ(Test.S_OFF, Test.GetCurrentState());
 }
 
-TEST(TC_LED_SID1_1_0_1_NEG, 04)
+TEST(LED_TEST_OPTION_3_TC_LED_SID1_1_0_1_NEG, 04)
 {
 	LED Test;
 
@@ -49,7 +41,7 @@ TEST(TC_LED_SID1_1_0_1_NEG, 04)
 	EXPECT_EQ(Test.S_OFF, Test.GetCurrentState());
 }
 
-TEST(TC_LED_1_0_1_NEG, 05)
+TEST(LED_TEST_OPTION_3_TC_LED_1_0_1_NEG, 05)
 {
 	LED Test;
 
@@ -57,7 +49,7 @@ TEST(TC_LED_1_0_1_NEG, 05)
 	EXPECT_EQ(Test.S_OFF, Test.GetCurrentState());
 }
 
-TEST(TC_LED_1_0_1_NEG, 24)
+TEST(LED_TEST_OPTION_3_TC_LED_1_0_1_NEG, 24)
 {
 	LED Test;
 
@@ -65,7 +57,7 @@ TEST(TC_LED_1_0_1_NEG, 24)
 	EXPECT_EQ(Test.S_OFF, Test.GetCurrentState());
 }
 
-TEST(TC_LED_2_1_POS, 06)
+TEST(LED_TEST_OPTION_3_TC_LED_2_1_POS, 06)
 {
 	LED Test;
 
@@ -75,7 +67,7 @@ TEST(TC_LED_2_1_POS, 06)
 	// Current state is now S_OFF
 }
 
-TEST(TC_LED_2_3_POS, 07)
+TEST(LED_TEST_OPTION_3_TC_LED_2_3_POS, 07)
 {
 	LED Test;
 
@@ -85,7 +77,7 @@ TEST(TC_LED_2_3_POS, 07)
 	// Current state is now S_BLINK_1S
 }
 
-TEST(TC_LED_2_4_POS, 08)
+TEST(LED_TEST_OPTION_3_TC_LED_2_4_POS, 08)
 {
 	LED Test;
 
@@ -95,7 +87,7 @@ TEST(TC_LED_2_4_POS, 08)
 	// Current state is now S_BLINK_2S
 }
 
-TEST(TC_LED_2_0_2_NEG, 09)
+TEST(LED_TEST_OPTION_3_TC_LED_2_0_2_NEG, 09)
 {
 	LED Test;
 
@@ -106,7 +98,7 @@ TEST(TC_LED_2_0_2_NEG, 09)
 	// Current state remains as S_ON
 }
 
-TEST(TC_LED_2_0_2_NEG, 10)
+TEST(LED_TEST_OPTION_3_TC_LED_2_0_2_NEG, 10)
 {
 	LED Test;
 
@@ -118,7 +110,7 @@ TEST(TC_LED_2_0_2_NEG, 10)
 
 }
 
-TEST(TC_LED_2_0_2_NEG, 11)
+TEST(LED_TEST_OPTION_3_TC_LED_2_0_2_NEG, 11)
 {
 	LED Test;
 
@@ -129,7 +121,7 @@ TEST(TC_LED_2_0_2_NEG, 11)
 	// Current state remains as S_ON
 }
 
-TEST(TC_LED_3_2_POS, 12)
+TEST(LED_TEST_OPTION_3_TC_LED_3_2_POS, 12)
 {
 	LED Test;
 
@@ -141,7 +133,7 @@ TEST(TC_LED_3_2_POS, 12)
 	// Current state is now S_BLINK_2S
 }
 
-TEST(TC_LED_3_4_POS, 13)
+TEST(LED_TEST_OPTION_3_TC_LED_3_4_POS, 13)
 {
 	LED Test;
 
@@ -153,7 +145,7 @@ TEST(TC_LED_3_4_POS, 13)
 	// Current state remains as S_ON
 }
 
-TEST(TC_LED_3_0_3_NEG, 14)
+TEST(LED_TEST_OPTION_3_TC_LED_3_0_3_NEG, 14)
 {
 	LED Test;
 
@@ -165,7 +157,7 @@ TEST(TC_LED_3_0_3_NEG, 14)
 	// Current state remains as S_BLINK_1S
 }
 
-TEST(TC_LED_3_0_3_NEG, 15)
+TEST(LED_TEST_OPTION_3_TC_LED_3_0_3_NEG, 15)
 {
 	LED Test;
 
@@ -177,7 +169,7 @@ TEST(TC_LED_3_0_3_NEG, 15)
 	// Current state remains as S_BLINK_1S
 }
 
-TEST(TC_LED_3_0_3_NEG, 16)
+TEST(LED_TEST_OPTION_3_TC_LED_3_0_3_NEG, 16)
 {
 	LED Test;
 
@@ -189,7 +181,7 @@ TEST(TC_LED_3_0_3_NEG, 16)
 	// Current state remains as S_BLINK_1S
 }
 
-TEST(TC_LED_3_0_3_NEG, 17)
+TEST(LED_TEST_OPTION_3_TC_LED_3_0_3_NEG, 17)
 {
 	LED Test;
 
@@ -202,7 +194,7 @@ TEST(TC_LED_3_0_3_NEG, 17)
 }
 
 
-TEST(TC_LED_4_2_POS, 18)
+TEST(LED_TEST_OPTION_3_TC_LED_4_2_POS, 18)
 {
 	LED Test;
 
@@ -214,7 +206,7 @@ TEST(TC_LED_4_2_POS, 18)
 	// Current state is now S_BLINK_1S
 }
 
-TEST(TC_LED_4_3_POS, 19)
+TEST(LED_TEST_OPTION_3_TC_LED_4_3_POS, 19)
 {
 	LED Test;
 
@@ -227,7 +219,7 @@ TEST(TC_LED_4_3_POS, 19)
 }
 
 
-TEST(TC_LED_4_0_4_NEG, 20)
+TEST(LED_TEST_OPTION_3_TC_LED_4_0_4_NEG, 20)
 {
 	LED Test;
 
@@ -239,7 +231,7 @@ TEST(TC_LED_4_0_4_NEG, 20)
 	// Current state remains as S_BLINK_2S
 }
 
-TEST(TC_LED_4_0_4_NEG, 21)
+TEST(LED_TEST_OPTION_3_TC_LED_4_0_4_NEG, 21)
 {
 	LED Test;
 
@@ -251,7 +243,7 @@ TEST(TC_LED_4_0_4_NEG, 21)
 	// Current state remains as S_BLINK_2S
 }
 
-TEST(TC_LED_4_0_4_NEG, 22)
+TEST(LED_TEST_OPTION_3_TC_LED_4_0_4_NEG, 22)
 {
 	LED Test;
 
@@ -263,7 +255,7 @@ TEST(TC_LED_4_0_4_NEG, 22)
 	// Current state remains as S_BLINK_2S
 }
 
-TEST(TC_LED_4_0_4_NEG, 23)
+TEST(LED_TEST_OPTION_3_TC_LED_4_0_4_NEG, 23)
 {
 	LED Test;
 

@@ -8,15 +8,7 @@
 # include "gtest/gtest.h"
 # include "Led.h"
 
-TEST(LED_TEST_OPTION_2, TEST_CASES)
-{
-	printf("\n---------------------------------------------------------------");
-	printf("\n                   OPTION 2                                    ");
-	printf("\n---------------------------------------------------------------");
-	printf("\n");
-}
-
-TEST(LED__LED_STATE, all)
+TEST(LED_TEST_OPTION_2_LED__LED_STATE, all)
 {
 	LED Test;
 

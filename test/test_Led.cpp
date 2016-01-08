@@ -8,15 +8,7 @@
 # include "gtest/gtest.h"
 # include "Led.h"
 
-TEST(LED_TEST_OPTION_1, TEST_CASES)
-{
-	printf("\n---------------------------------------------------------------");
-	printf("\n                   OPTION 1                                    ");
-	printf("\n---------------------------------------------------------------");
-	printf("\n");
-}
-
-TEST(LED__LED_STATE__S_OFF, negative)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_OFF, negative)
 {
 	LED Test;
 
@@ -33,7 +25,7 @@ TEST(LED__LED_STATE__S_OFF, negative)
 	EXPECT_EQ(Test.S_OFF, Test.GetCurrentState());
 }
 
-TEST(LED__LED_STATE__S_OFF, positive)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_OFF, positive)
 {
 	LED Test;
 
@@ -41,7 +33,7 @@ TEST(LED__LED_STATE__S_OFF, positive)
 	EXPECT_EQ(Test.S_ON, Test.GetCurrentState());
 }
 
-TEST(LED__LED_STATE__S_ON, negative)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_ON, negative)
 {
 	LED Test;
 
@@ -59,7 +51,7 @@ TEST(LED__LED_STATE__S_ON, negative)
 	// Current state remains as S_ON
 }
 
-TEST(LED__LED_STATE__S_ON, positive)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_ON, positive)
 {
 	LED Test;
 
@@ -79,7 +71,7 @@ TEST(LED__LED_STATE__S_ON, positive)
 	// Current state is now S_BLINK_2S
 }
 
-TEST(LED__LED_STATE__S_BLINK_1S, negative)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_BLINK_1S, negative)
 {
 	LED Test;
 
@@ -99,7 +91,7 @@ TEST(LED__LED_STATE__S_BLINK_1S, negative)
 	// Current state remains as S_BLINK_1S
 }
 
-TEST(LED__LED_STATE__S_BLINK_1S, positive)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_BLINK_1S, positive)
 {
 	LED Test;
 
@@ -117,7 +109,7 @@ TEST(LED__LED_STATE__S_BLINK_1S, positive)
 
 }
 
-TEST(LED__LED_STATE__S_BLINK_2S, negative)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_BLINK_2S, negative)
 {
 	LED Test;
 
@@ -137,7 +129,7 @@ TEST(LED__LED_STATE__S_BLINK_2S, negative)
 	// Current state remains as S_BLINK_2S
 }
 
-TEST(LED__LED_STATE__S_BLINK_2S, positive)
+TEST(LED_TEST_OPTION_1_LED__LED_STATE__S_BLINK_2S, positive)
 {
 	LED Test;
 

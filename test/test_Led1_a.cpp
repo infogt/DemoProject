@@ -11,15 +11,7 @@ namespace testled {
 	LED Test;
 }
 
-TEST(LED_TEST_OPTION_1_a, TEST_CASES)
-{
-	printf("\n---------------------------------------------------------------");
-	printf("\n                   OPTION 1_a                                  ");
-	printf("\n---------------------------------------------------------------");
-	printf("\n");
-}
-
-TEST(TC_LED__LED_STATE__S_OFF, negative)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_OFF, negative)
 {
 	EXPECT_EQ(testled::Test.E_NOT_OK, testled::Test.Off());
 	EXPECT_EQ(testled::Test.S_OFF, testled::Test.GetCurrentState());
@@ -34,13 +26,13 @@ TEST(TC_LED__LED_STATE__S_OFF, negative)
 	EXPECT_EQ(testled::Test.S_OFF, testled::Test.GetCurrentState());
 }
 
-TEST(TC_LED__LED_STATE__S_OFF, positive)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_OFF, positive)
 {
 	EXPECT_EQ(testled::Test.E_OK, testled::Test.On());
 	EXPECT_EQ(testled::Test.S_ON, testled::Test.GetCurrentState());
 }
 
-TEST(TC_LED__LED_STATE__S_ON, negative)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_ON, negative)
 {
 	EXPECT_EQ(testled::Test.E_NOT_OK, testled::Test.On());
 	EXPECT_EQ(testled::Test.S_ON, testled::Test.GetCurrentState());
@@ -55,7 +47,7 @@ TEST(TC_LED__LED_STATE__S_ON, negative)
 	// Current state remains as S_ON
 }
 
-TEST(TC_LED__LED_STATE__S_ON, positive)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_ON, positive)
 {
 	EXPECT_EQ(testled::Test.E_OK, testled::Test.Off());
 	EXPECT_EQ(testled::Test.S_OFF, testled::Test.GetCurrentState());
@@ -72,7 +64,7 @@ TEST(TC_LED__LED_STATE__S_ON, positive)
 	// Current state is now S_BLINK_2S
 }
 
-TEST(TC_LED__LED_STATE__S_BLINK_2S, negative)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_BLINK_2S, negative)
 {
 	EXPECT_EQ(testled::Test.E_NOT_OK, testled::Test.Off());
 	EXPECT_EQ(testled::Test.S_BLINK_2S, testled::Test.GetCurrentState());
@@ -87,7 +79,7 @@ TEST(TC_LED__LED_STATE__S_BLINK_2S, negative)
 	// Current state remains as S_BLINK_2S
 }
 
-TEST(TC_LED__LED_STATE__S_BLINK_2S, positive)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_BLINK_2S, positive)
 {
 	EXPECT_EQ(testled::Test.E_OK, testled::Test.On());
 	EXPECT_EQ(testled::Test.S_ON, testled::Test.GetCurrentState());
@@ -99,7 +91,7 @@ TEST(TC_LED__LED_STATE__S_BLINK_2S, positive)
 	// Current state is now S_BLINK_1S
 }
 
-TEST(TC_LED__LED_STATE__S_BLINK_1S, negative)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_BLINK_1S, negative)
 {
 	EXPECT_EQ(testled::Test.E_NOT_OK, testled::Test.Off());
 	EXPECT_EQ(testled::Test.S_BLINK_1S, testled::Test.GetCurrentState());
@@ -114,7 +106,7 @@ TEST(TC_LED__LED_STATE__S_BLINK_1S, negative)
 	// Current state remains as S_BLINK_1S
 }
 
-TEST(TC_LED__LED_STATE__S_BLINK_1S, positive)
+TEST(LED_TEST_OPTION_1_a_TC_LED__LED_STATE__S_BLINK_1S, positive)
 {
 	EXPECT_EQ(testled::Test.E_OK, testled::Test.Blink(2));
 	EXPECT_EQ(testled::Test.S_BLINK_2S, testled::Test.GetCurrentState());

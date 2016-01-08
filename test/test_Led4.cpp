@@ -148,15 +148,7 @@ void TEST_LED::TestCode_CallMethod(unsigned int m)
 	}
 }
 
-TEST(LED_TEST_OPTION_4, TEST_CASES)
-{
-	printf("\n---------------------------------------------------------------");
-	printf("\n                   OPTION 4                                    ");
-	printf("\n---------------------------------------------------------------");
-	printf("\n");
-}
-
-TEST(LED_TEST_LED_STATE, all)
+TEST(LED_TEST_OPTION_4_LED_TEST_LED_STATE, all)
 {
 	for (unsigned int s = 0; s < NUM_OF_STATES; s++)
 	{
