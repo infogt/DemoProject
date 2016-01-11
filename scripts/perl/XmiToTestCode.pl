@@ -181,7 +181,7 @@ foreach(@templateLines)
 {
 	$_ =~ s/<DATETIME>/$datetime/g;
 	$_ =~ s/<NUM_OF_STATES>/$LightModuleNumOfStates/g;
-	$_ =~ s/<NUM_OF_METHODS>/$LightModuleNumOfMethods/g;
+	$_ =~ s/<NUM_OF_METHODS>/$LightModuleNumOfMethodCalls/g;
 	$_ =~ s/<METHOD_GET_CURRENT_STATE>/$Method_ReadCurrentState/g;
 	$_ =~ s/<METHOD_ValidNewState>/$Method_ValidNewState/g;
 	$_ =~ s/<METHOD_TestCode_IniSt_To_StUnderTest>/$Method_TestCode_IniSt_To_StUnderTest/g;

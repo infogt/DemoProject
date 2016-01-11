@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2016-01-08 17:11:53">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2016-01-11 10:43:15">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -73,7 +73,7 @@
 						</UML:Collaboration>
 						<UML:Package name="LightModule" xmi.id="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_8864927A_1913_4ed4_A7BD_5D9AA583CF28"/>
+								<UML:Stereotype xmi.idref="EAID_B68E8889_E12C_48f1_8C4B_BAA44BC6F3DD"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="parent" value="EAPK_19196A95_EDD4_45b2_AE8A_AE96BD52BC23"/>
@@ -191,7 +191,7 @@
 								</UML:Collaboration>
 								<UML:Package name="LightModuleStates" xmi.id="EAPK_61923268_6354_438e_ACBC_9150291341AD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_3030187C_CF9C_4d0a_88E2_B194B08B102E"/>
+										<UML:Stereotype xmi.idref="EAID_6D77BA00_3460_434d_8FFF_33A55A26D0BE"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="parent" value="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC"/>
@@ -1076,7 +1076,7 @@
 								</UML:Package>
 								<UML:Package name="LightModuleTypes" xmi.id="EAPK_B44A8684_F918_4552_9CA5_0572E2AC94A9" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_F7F7576D_ACBC_4b0b_BD4F_525263860F05"/>
+										<UML:Stereotype xmi.idref="EAID_A97828BB_2C8F_4eb4_945F_00CFC83CB543"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="parent" value="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC"/>
@@ -1437,7 +1437,7 @@
 								</UML:Package>
 								<UML:Package name="LightModule" xmi.id="EAPK_38030600_77F4_4f59_9F58_5D910CED5536" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_F7F7576D_ACBC_4b0b_BD4F_525263860F05"/>
+										<UML:Stereotype xmi.idref="EAID_A97828BB_2C8F_4eb4_945F_00CFC83CB543"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="parent" value="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC"/>
@@ -1675,13 +1675,13 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
-				<UML:Stereotype xmi.id="EAID_8864927A_1913_4ed4_A7BD_5D9AA583CF28" name="root" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_B68E8889_E12C_48f1_8C4B_BAA44BC6F3DD" name="root" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_3030187C_CF9C_4d0a_88E2_B194B08B102E" name="sdl" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_6D77BA00_3460_434d_8FFF_33A55A26D0BE" name="sdl" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_F7F7576D_ACBC_4b0b_BD4F_525263860F05" name="fidl" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_A97828BB_2C8F_4eb4_945F_00CFC83CB543" name="fidl" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
 				<UML:DataType xmi.id="eaxmiid0" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
