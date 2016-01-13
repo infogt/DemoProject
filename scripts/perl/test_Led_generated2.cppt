@@ -1,0 +1,15 @@
+/*
+ * test_Led.cpp
+ *
+ *  Created on: <DATETIME>
+ *      Author: Tool Generated
+ */
+
+# include "gtest/gtest.h"
+# include "Led.h"
+
+/* Method to read the current state */
+#define TestCode_GetCurrentState       Test.<METHOD_GET_CURRENT_STATE>
+
+<ALL_TEST_CASES>
+

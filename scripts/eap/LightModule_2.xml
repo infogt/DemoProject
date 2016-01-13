@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2016-01-13 14:30:51">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2016-01-13 14:16:43">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -73,7 +73,7 @@
 						</UML:Collaboration>
 						<UML:Package name="LightModule" xmi.id="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_416A84CC_3540_4856_9AA8_F0053E4F91CE"/>
+								<UML:Stereotype xmi.idref="EAID_28359EA7_E027_41d7_AC6C_916D39D14049"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="parent" value="EAPK_19196A95_EDD4_45b2_AE8A_AE96BD52BC23"/>
@@ -191,7 +191,7 @@
 								</UML:Collaboration>
 								<UML:Package name="LightModuleStates" xmi.id="EAPK_61923268_6354_438e_ACBC_9150291341AD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1825B831_2A6F_496d_8C2C_330B4CE20AE2"/>
+										<UML:Stereotype xmi.idref="EAID_57AA673C_427E_45b7_BE43_DDB8DAD00B4F"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="parent" value="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC"/>
@@ -289,8 +289,10 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={59FA605E-C9F0-42c8-A081-4F67FC757698}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={B0509A9B-A4B7-4f50-B005-6F6C286C4347}$DES;$CLT={3926E46F-07B3-4f1a-87FD-18EAEA59A8D6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Blink(1);" xmi.id="EAID_17688723_1D26_4bef_9056_73BE43FFD5DC"/>
-														<UML:TaggedValue tag="TestData" value="Off();" xmi.id="EAID_219094CC_9D7F_4014_912F_83B6E08FFEE2"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(1);" xmi.id="EAID_17688723_1D26_4bef_9056_73BE43FFD5DC"/>
+														<UML:TaggedValue tag="TestData" value="Test.Off();" xmi.id="EAID_219094CC_9D7F_4014_912F_83B6E08FFEE2"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(3);" xmi.id="EAID_23D494A4_B997_4311_A865_557E69A1B372"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(0);" xmi.id="EAID_70FBFE1F_8929_4dea_9A3C_7A83BB61B8A6"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_3CD3D3F0_A066_412f_81F5_E2BF9B87C529" visibility="public" source="EAID_C6232809_2866_4650_9564_A79D64E0371D" target="EAID_5B59B3F6_B726_4243_8338_2273EA035ECF">
@@ -333,7 +335,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BB169650-2FDC-4681-A7E8-F453C9B03186}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={1C5840CD-C996-4085-BBFD-43CBBAB99F88}$DES;$CLT={3CD3D3F0-A066-412f-81F5-E2BF9B87C529}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Blink(1);" xmi.id="EAID_830E63FB_C3E6_47f3_96F5_6667B9178064"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(1);" xmi.id="EAID_830E63FB_C3E6_47f3_96F5_6667B9178064"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_561E37AF_3A38_4601_BC9E_7FB3BCCAF524" visibility="public" source="EAID_5B59B3F6_B726_4243_8338_2273EA035ECF" target="EAID_C6232809_2866_4650_9564_A79D64E0371D">
@@ -376,7 +378,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={FAB9C5C8-3205-4f17-879B-2FB802140F4E}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={1C5840CD-C996-4085-BBFD-43CBBAB99F88}$DES;$CLT={561E37AF-3A38-4601-BC9E-7FB3BCCAF524}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Blink(2);" xmi.id="EAID_E9842C52_69FF_4448_9389_08B45CF728AE"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(2);" xmi.id="EAID_E9842C52_69FF_4448_9389_08B45CF728AE"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_A312747B_CF15_41f4_BD15_7C12AF92636B" visibility="public" source="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553" target="EAID_5B59B3F6_B726_4243_8338_2273EA035ECF">
@@ -419,7 +421,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={8F36CCBC-21FB-40ca-A263-77CCADCAA621}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={1C5840CD-C996-4085-BBFD-43CBBAB99F88}$DES;$CLT={A312747B-CF15-41f4-BD15-7C12AF92636B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Blink(1);" xmi.id="EAID_CF108AE2_F006_45b7_AFBD_6B445BD3C1EB"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(1);" xmi.id="EAID_CF108AE2_F006_45b7_AFBD_6B445BD3C1EB"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_A96B7C68_BF54_424f_AF43_CE12C18E298A" visibility="public" source="EAID_5B59B3F6_B726_4243_8338_2273EA035ECF" target="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553">
@@ -462,7 +464,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B7402E90-4F41-4acf-BF4D-12330B7201E9}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={850BCBDC-9FEB-40f6-919B-2D70132D16BB}$DES;$CLT={A96B7C68-BF54-424f-AF43-CE12C18E298A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="On();" xmi.id="EAID_524B992B_2FB3_4070_9D59_D196613AA10C"/>
+														<UML:TaggedValue tag="TestData" value="Test.On();" xmi.id="EAID_524B992B_2FB3_4070_9D59_D196613AA10C"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_456F95D5_C27B_414e_B6FD_66AB3D6A8064" visibility="public" source="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553" target="EAID_D838BEC4_1360_4583_B8F7_667F77D3CCA7">
@@ -505,7 +507,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={98D33649-A986-41e4-B7F4-9ACED2077837}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={06258544-F5B9-4435-84C5-AD0498A5306A}$DES;$CLT={456F95D5-C27B-414e-B6FD-66AB3D6A8064}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Off();" xmi.id="EAID_B29585CA_87D6_408e_B2DD_77C91C9752CF"/>
+														<UML:TaggedValue tag="TestData" value="Test.Off();" xmi.id="EAID_B29585CA_87D6_408e_B2DD_77C91C9752CF"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_796D8D8F_E03C_4040_9813_6C66FF58A589" visibility="public" source="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553" target="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553">
@@ -548,7 +550,9 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D4B36B0B-85D8-46ef-A5A0-E3E3B4B49E2E}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={B0509A9B-A4B7-4f50-B005-6F6C286C4347}$DES;$CLT={796D8D8F-E03C-4040-9813-6C66FF58A589}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="On();" xmi.id="EAID_D879DF87_16EE_4230_B5D7_DB71AB4CB706"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(3);" xmi.id="EAID_65F6FB59_F850_4e89_871F_5D49498572A4"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(0);" xmi.id="EAID_BC038BDB_E771_4c6c_869D_095F42ED2ACA"/>
+														<UML:TaggedValue tag="TestData" value="Test.On();" xmi.id="EAID_D879DF87_16EE_4230_B5D7_DB71AB4CB706"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_C8F6623E_0C37_46d6_9C04_A2C26A3E3F66" visibility="public" source="EAID_C6232809_2866_4650_9564_A79D64E0371D" target="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553">
@@ -591,7 +595,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6F939746-2946-463a-BE20-049279D2553A}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={850BCBDC-9FEB-40f6-919B-2D70132D16BB}$DES;$CLT={C8F6623E-0C37-46d6-9C04-A2C26A3E3F66}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="On();" xmi.id="EAID_4EFA6331_119D_4f83_9886_7ADEDFC343E9"/>
+														<UML:TaggedValue tag="TestData" value="Test.On();" xmi.id="EAID_4EFA6331_119D_4f83_9886_7ADEDFC343E9"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_D42D043E_DA31_444f_BBE2_464CD5B65A1A" visibility="public" source="EAID_D838BEC4_1360_4583_B8F7_667F77D3CCA7" target="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553">
@@ -634,7 +638,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={936FF352-9986-412d-9C1B-7F3297C44BB6}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={850BCBDC-9FEB-40f6-919B-2D70132D16BB}$DES;$CLT={D42D043E-DA31-444f-BBE2-464CD5B65A1A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="On();" xmi.id="EAID_9C01E433_036D_4722_99D3_986EE7F7CEFF"/>
+														<UML:TaggedValue tag="TestData" value="Test.On();" xmi.id="EAID_9C01E433_036D_4722_99D3_986EE7F7CEFF"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_F32D8C26_94E9_4523_A8E5_E72A5C2747A5" visibility="public" source="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553" target="EAID_C6232809_2866_4650_9564_A79D64E0371D">
@@ -677,7 +681,7 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={66B4A13C-0F85-4f4c-804D-766EF3D5EDE0}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={1C5840CD-C996-4085-BBFD-43CBBAB99F88}$DES;$CLT={F32D8C26-94E9-4523-A8E5-E72A5C2747A5}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Blink(2);" xmi.id="EAID_AAD54FC4_9F4B_4484_BC9D_146606F071D8"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(2);" xmi.id="EAID_AAD54FC4_9F4B_4484_BC9D_146606F071D8"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_177980D8_F38A_49eb_B936_DD2663BAF3B0" visibility="public" source="EAID_C6232809_2866_4650_9564_A79D64E0371D" target="EAID_C6232809_2866_4650_9564_A79D64E0371D">
@@ -720,8 +724,10 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B33A84CF-54C0-4281-A92A-0890F984D365}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={B0509A9B-A4B7-4f50-B005-6F6C286C4347}$DES;$CLT={177980D8-F38A-49eb-B936-DD2663BAF3B0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Blink(2);" xmi.id="EAID_602904B8_E91E_4760_84E7_C61404C3F4B7"/>
-														<UML:TaggedValue tag="TestData" value="Off();" xmi.id="EAID_DE89C968_DA56_4916_94EC_7D0F488ECABC"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(0);" xmi.id="EAID_2E9E3AC5_DC25_4854_972F_09CAC1EEABB8"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(3);" xmi.id="EAID_49911A59_14DB_4e24_B351_3FF696CF1CDD"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(2);" xmi.id="EAID_602904B8_E91E_4760_84E7_C61404C3F4B7"/>
+														<UML:TaggedValue tag="TestData" value="Test.Off();" xmi.id="EAID_DE89C968_DA56_4916_94EC_7D0F488ECABC"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 												<UML:Transition xmi.id="EAID_53570146_EBFC_4aa0_84FF_4541B1297669" visibility="public" source="EAID_D838BEC4_1360_4583_B8F7_667F77D3CCA7" target="EAID_D838BEC4_1360_4583_B8F7_667F77D3CCA7">
@@ -764,9 +770,11 @@
 														<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
 														<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F806C575-3D3A-477e-8C83-52EBC6E90CBB}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=trigger$BEH;$PAR=0$PAR;$DES={B0509A9B-A4B7-4f50-B005-6F6C286C4347}$DES;$CLT={53570146-EBFC-4aa0-84FF-4541B1297669}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 														<UML:TaggedValue tag="virtualInheritance" value="0"/>
-														<UML:TaggedValue tag="TestData" value="Blink(1);" xmi.id="EAID_063BA0C5_C1A6_4aef_851D_1E41E0281578"/>
-														<UML:TaggedValue tag="TestData" value="Blink(2);" xmi.id="EAID_4A917B9C_4904_4260_A878_0A0C9869C05C"/>
-														<UML:TaggedValue tag="TestData" value="Off();" xmi.id="EAID_BE420436_92BA_40b3_8C4F_6AF499E2FD94"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(1);" xmi.id="EAID_063BA0C5_C1A6_4aef_851D_1E41E0281578"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(3);" xmi.id="EAID_0AFBDEE3_ECAB_4d5e_A8CE_E304E3627B0A"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(2);" xmi.id="EAID_4A917B9C_4904_4260_A878_0A0C9869C05C"/>
+														<UML:TaggedValue tag="TestData" value="Test.Blink(0);" xmi.id="EAID_9DDFEA9D_7659_4927_9B45_51D08B20A329"/>
+														<UML:TaggedValue tag="TestData" value="Test.Off();" xmi.id="EAID_BE420436_92BA_40b3_8C4F_6AF499E2FD94"/>
 													</UML:ModelElement.taggedValue>
 												</UML:Transition>
 											</UML:StateMachine.transitions>
@@ -1076,7 +1084,7 @@
 								</UML:Package>
 								<UML:Package name="LightModuleTypes" xmi.id="EAPK_B44A8684_F918_4552_9CA5_0572E2AC94A9" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_09CA36CA_7961_488e_828D_0D379FF02A85"/>
+										<UML:Stereotype xmi.idref="EAID_DA44D22A_4F55_460c_8E7D_EE98B178D4E2"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="parent" value="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC"/>
@@ -1437,7 +1445,7 @@
 								</UML:Package>
 								<UML:Package name="LightModule" xmi.id="EAPK_38030600_77F4_4f59_9F58_5D910CED5536" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_09CA36CA_7961_488e_828D_0D379FF02A85"/>
+										<UML:Stereotype xmi.idref="EAID_DA44D22A_4F55_460c_8E7D_EE98B178D4E2"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="parent" value="EAPK_C68351E6_9C4D_418e_878B_B12CC81FF3BC"/>
@@ -1675,13 +1683,13 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
-				<UML:Stereotype xmi.id="EAID_416A84CC_3540_4856_9AA8_F0053E4F91CE" name="root" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_28359EA7_E027_41d7_AC6C_916D39D14049" name="root" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_1825B831_2A6F_496d_8C2C_330B4CE20AE2" name="sdl" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_57AA673C_427E_45b7_BE43_DDB8DAD00B4F" name="sdl" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_09CA36CA_7961_488e_828D_0D379FF02A85" name="fidl" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_DA44D22A_4F55_460c_8E7D_EE98B178D4E2" name="fidl" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
 				<UML:DataType xmi.id="eaxmiid0" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
@@ -1711,16 +1719,16 @@
 				<UML:DiagramElement geometry="Left=148;Top=89;Right=452;Bottom=204;" subject="EAID_603E753F_6DDC_4aac_BA6A_8B1BACF2F6DE" seqno="4" style="DUID=6AC87AF8;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
-		<UML:TaggedValue tag="TestData_InitToSUT" xmi.id="EAID_6293EBBB_44FE_46a6_9F2D_E7C3A39005B2" value="On(); Blink(1);" modelElement="EAID_5B59B3F6_B726_4243_8338_2273EA035ECF"/>
-		<UML:TaggedValue tag="TestData_InitToSUT" xmi.id="EAID_0F1B8CC4_B86D_4f34_B9A0_6EDB26C70746" value="On();" modelElement="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553"/>
-		<UML:TaggedValue tag="TestData_InitToSUT" xmi.id="EAID_A3F3BBDF_78E5_4981_BCB2_6AD08BE1CE28" value="On(); Blink(2);" modelElement="EAID_C6232809_2866_4650_9564_A79D64E0371D"/>
+		<UML:TaggedValue tag="TestData_InitToSUT" xmi.id="EAID_6293EBBB_44FE_46a6_9F2D_E7C3A39005B2" value="Test.On(); Test.Blink(1);" modelElement="EAID_5B59B3F6_B726_4243_8338_2273EA035ECF"/>
+		<UML:TaggedValue tag="TestData_InitToSUT" xmi.id="EAID_0F1B8CC4_B86D_4f34_B9A0_6EDB26C70746" value="Test.On();" modelElement="EAID_C4B05909_3319_4c80_B656_7ABA5E26D553"/>
+		<UML:TaggedValue tag="TestData_InitToSUT" xmi.id="EAID_A3F3BBDF_78E5_4981_BCB2_6AD08BE1CE28" value="Test.On(); Test.Blink(2);" modelElement="EAID_C6232809_2866_4650_9564_A79D64E0371D"/>
 		<UML:Diagram name="LightModuleStates" xmi.id="EAID_99326251_4DBA_4658_A100_C65DA04B0139" diagramType="StateDiagram" owner="EAPK_61923268_6354_438e_ACBC_9150291341AD" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="documentation" value="State diagram for light module"/>
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="author" value="rgdsouza"/>
 				<UML:TaggedValue tag="created_date" value="2016-01-02 20:34:03"/>
-				<UML:TaggedValue tag="modified_date" value="2016-01-08 15:34:48"/>
+				<UML:TaggedValue tag="modified_date" value="2016-01-13 14:16:21"/>
 				<UML:TaggedValue tag="package" value="EAPK_61923268_6354_438e_ACBC_9150291341AD"/>
 				<UML:TaggedValue tag="type" value="Statechart"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
@@ -1728,7 +1736,7 @@
 				<UML:TaggedValue tag="ea_localid" value="35"/>
 				<UML:TaggedValue tag="parent" value="EAID_A5DBDB44_548B_4652_A01B_9AF34E8B7CB8"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=1F3C04CA;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=UML Behavioral::State Machine;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=A63249F9;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=UML Behavioral::State Machine;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=535;Top=406;Right=655;Bottom=466;" subject="EAID_C6232809_2866_4650_9564_A79D64E0371D" seqno="1" style="DUID=EB212657;"/>
@@ -1745,7 +1753,7 @@
 				<UML:DiagramElement geometry="SX=41;SY=21;EX=41;EY=21;EDGE=1;$LLB=;LLT=;LMT=CX=29:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C8F6623E_0C37_46d6_9C04_A2C26A3E3F66" style="Mode=3;EOID=FA130027;SOID=EB212657;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=CX=38:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F32D8C26_94E9_4523_A8E5_E72A5C2747A5" style="Mode=3;EOID=EB212657;SOID=FA130027;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=-1;SY=0;EX=-1;EY=0;EDGE=1;$LLB=;LLT=;LMT=CX=29:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A96B7C68_BF54_424f_AF43_CE12C18E298A" style="Mode=3;EOID=FA130027;SOID=50CF4A1D;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=-52;SY=4;EX=-52;EY=4;EDGE=4;$LLB=;LLT=;LMT=CX=38:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A312747B_CF15_41f4_BD15_7C12AF92636B" style="Mode=3;EOID=50CF4A1D;SOID=FA130027;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=-52;SY=6;EX=-52;EY=6;EDGE=4;$LLB=;LLT=;LMT=CX=38:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A312747B_CF15_41f4_BD15_7C12AF92636B" style="Mode=3;EOID=50CF4A1D;SOID=FA130027;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=-13;SY=-19;EX=-13;EY=-19;EDGE=4;$LLB=;LLT=;LMT=CX=29:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_456F95D5_C27B_414e_B6FD_66AB3D6A8064" style="Mode=3;EOID=D38F2B41;SOID=FA130027;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=7;SY=10;EX=7;EY=10;EDGE=2;$LLB=;LLT=;LMT=CX=29:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D42D043E_DA31_444f_BBE2_464CD5B65A1A" style="Mode=3;EOID=FA130027;SOID=D38F2B41;Color=-1;LWidth=0;Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_7B0B36CA_52D9_47e7_A1B6_74B62A04B8E0" style="Mode=3;EOID=D38F2B41;SOID=962103F6;Color=-1;LWidth=0;Hidden=0;"/>

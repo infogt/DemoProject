@@ -1,7 +1,7 @@
 /*
  * test_Led.cpp
  *
- *  Created on: Tue Jan 12 13:05:01 2016
+ *  Created on: Wed Jan 13 14:31:00 2016
  *      Author: Tool Generated
  */
 
@@ -9,7 +9,7 @@
 # include "Led.h"
 
 #define NUM_OF_STATES                    4
-#define NUM_OF_METHODS                   6
+#define NUM_OF_METHODS                   4
 
 /* Method to read the current state */
 #define TESTCODE_GET_CURRENT_STATE       GetCurrentState
@@ -31,40 +31,32 @@ TEST_LED::LED_STATE const TEST_LED::ValidNewState[NUM_OF_STATES][NUM_OF_METHODS]
 	
 	/* New states expected when methods are called in state S_BLINK_1S */
 	{
-		S_BLINK_1S, //Method Blink(0);
 		S_BLINK_1S, //Method Blink(1);
 		S_BLINK_2S, //Method Blink(2);
-		S_BLINK_1S, //Method Blink(3);
 		S_BLINK_1S, //Method Off();
 		S_ON, //Method On();
 	},
 
 	/* New states expected when methods are called in state S_BLINK_2S */
 	{
-		S_BLINK_2S, //Method Blink(0);
 		S_BLINK_1S, //Method Blink(1);
 		S_BLINK_2S, //Method Blink(2);
-		S_BLINK_2S, //Method Blink(3);
 		S_BLINK_2S, //Method Off();
 		S_ON, //Method On();
 	},
 
 	/* New states expected when methods are called in state S_OFF */
 	{
-		S_OFF, //Method Blink(0);
 		S_OFF, //Method Blink(1);
 		S_OFF, //Method Blink(2);
-		S_OFF, //Method Blink(3);
 		S_OFF, //Method Off();
 		S_ON, //Method On();
 	},
 
 	/* New states expected when methods are called in state S_ON */
 	{
-		S_ON, //Method Blink(0);
 		S_BLINK_1S, //Method Blink(1);
 		S_BLINK_2S, //Method Blink(2);
-		S_ON, //Method Blink(3);
 		S_OFF, //Method Off();
 		S_ON, //Method On();
 	},
@@ -108,26 +100,18 @@ void TEST_LED::TestCode_CallMethod(unsigned int m)
 	{
 		
 		case 0:
-			Blink(0);
-			break;
-
-		case 1:
 			Blink(1);
 			break;
 
-		case 2:
+		case 1:
 			Blink(2);
 			break;
 
-		case 3:
-			Blink(3);
-			break;
-
-		case 4:
+		case 2:
 			Off();
 			break;
 
-		case 5:
+		case 3:
 			On();
 			break;
 

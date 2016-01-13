@@ -1,4 +1,7 @@
 ### C++ ###
+# Directories
+Debug/
+
 # Compiled Object files
 *.slo
 *.lo
