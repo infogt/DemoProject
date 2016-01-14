@@ -20,6 +20,6 @@ GTEST_API_ int main(int argc, char **argv) {
 GTEST_API_ int main(int argc, char **argv) {
   printf("Running main() from gtest_main.cc\n");
   ::testing::InitGoogleTest(&argc, argv);
-  ::testing::GTEST_FLAG(filter) = "*LED_TC*State_S_BLINK_1S*";
+  ::testing::GTEST_FLAG(filter) = "*State_S*";
   return RUN_ALL_TESTS();
 }

@@ -186,7 +186,7 @@ foreach my $state (@LightModuleStates)
 			"\n State under test  : $state" . 
 			"\n Method under test : $methodName" . 
 			"\n*/" . 
-			"\nTEST($Module\_$testcasenum\_State_$state\_Method_$methodName, $TestCategory)" . 
+			"\nTEST($Module\_State_$state, Method_$methodName\_$TestCategory\_$testcasenum)" . 
 			"\n{" . 
 			"\n  /* Create an object to test */" . 
 			"\n  LED Test;" . 

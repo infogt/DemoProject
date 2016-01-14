@@ -1,7 +1,7 @@
 /*
  * test_Led.cpp
  *
- *  Created on: Thu Jan 14 08:59:41 2016
+ *  Created on: Thu Jan 14 14:32:32 2016
  *      Author: Tool Generated
  */
 
@@ -18,7 +18,7 @@
  State under test  : S_BLINK_1S
  Method under test : Blink
 */
-TEST(LED_TC0001_State_S_BLINK_1S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_1S, Method_Blink_Negative_TC0001)
 {
   /* Create an object to test */
   LED Test;
@@ -39,7 +39,7 @@ TEST(LED_TC0001_State_S_BLINK_1S_Method_Blink, Negative)
  State under test  : S_BLINK_1S
  Method under test : Blink
 */
-TEST(LED_TC0002_State_S_BLINK_1S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_1S, Method_Blink_Negative_TC0002)
 {
   /* Create an object to test */
   LED Test;
@@ -60,7 +60,7 @@ TEST(LED_TC0002_State_S_BLINK_1S_Method_Blink, Negative)
  State under test  : S_BLINK_1S
  Method under test : Blink
 */
-TEST(LED_TC0003_State_S_BLINK_1S_Method_Blink, Positive)
+TEST(LED_State_S_BLINK_1S, Method_Blink_Positive_TC0003)
 {
   /* Create an object to test */
   LED Test;
@@ -81,7 +81,7 @@ TEST(LED_TC0003_State_S_BLINK_1S_Method_Blink, Positive)
  State under test  : S_BLINK_1S
  Method under test : Blink
 */
-TEST(LED_TC0004_State_S_BLINK_1S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_1S, Method_Blink_Negative_TC0004)
 {
   /* Create an object to test */
   LED Test;
@@ -102,7 +102,7 @@ TEST(LED_TC0004_State_S_BLINK_1S_Method_Blink, Negative)
  State under test  : S_BLINK_1S
  Method under test : Blink
 */
-TEST(LED_TC0005_State_S_BLINK_1S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_1S, Method_Blink_Negative_TC0005)
 {
   /* Create an object to test */
   LED Test;
@@ -123,7 +123,7 @@ TEST(LED_TC0005_State_S_BLINK_1S_Method_Blink, Negative)
  State under test  : S_BLINK_1S
  Method under test : Off
 */
-TEST(LED_TC0006_State_S_BLINK_1S_Method_Off, Negative)
+TEST(LED_State_S_BLINK_1S, Method_Off_Negative_TC0006)
 {
   /* Create an object to test */
   LED Test;
@@ -144,7 +144,7 @@ TEST(LED_TC0006_State_S_BLINK_1S_Method_Off, Negative)
  State under test  : S_BLINK_1S
  Method under test : On
 */
-TEST(LED_TC0007_State_S_BLINK_1S_Method_On, Positive)
+TEST(LED_State_S_BLINK_1S, Method_On_Positive_TC0007)
 {
   /* Create an object to test */
   LED Test;
@@ -165,7 +165,7 @@ TEST(LED_TC0007_State_S_BLINK_1S_Method_On, Positive)
  State under test  : S_BLINK_2S
  Method under test : Blink
 */
-TEST(LED_TC0008_State_S_BLINK_2S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_2S, Method_Blink_Negative_TC0008)
 {
   /* Create an object to test */
   LED Test;
@@ -186,7 +186,7 @@ TEST(LED_TC0008_State_S_BLINK_2S_Method_Blink, Negative)
  State under test  : S_BLINK_2S
  Method under test : Blink
 */
-TEST(LED_TC0009_State_S_BLINK_2S_Method_Blink, Positive)
+TEST(LED_State_S_BLINK_2S, Method_Blink_Positive_TC0009)
 {
   /* Create an object to test */
   LED Test;
@@ -207,7 +207,7 @@ TEST(LED_TC0009_State_S_BLINK_2S_Method_Blink, Positive)
  State under test  : S_BLINK_2S
  Method under test : Blink
 */
-TEST(LED_TC0010_State_S_BLINK_2S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_2S, Method_Blink_Negative_TC0010)
 {
   /* Create an object to test */
   LED Test;
@@ -228,7 +228,7 @@ TEST(LED_TC0010_State_S_BLINK_2S_Method_Blink, Negative)
  State under test  : S_BLINK_2S
  Method under test : Blink
 */
-TEST(LED_TC0011_State_S_BLINK_2S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_2S, Method_Blink_Negative_TC0011)
 {
   /* Create an object to test */
   LED Test;
@@ -249,7 +249,7 @@ TEST(LED_TC0011_State_S_BLINK_2S_Method_Blink, Negative)
  State under test  : S_BLINK_2S
  Method under test : Blink
 */
-TEST(LED_TC0012_State_S_BLINK_2S_Method_Blink, Negative)
+TEST(LED_State_S_BLINK_2S, Method_Blink_Negative_TC0012)
 {
   /* Create an object to test */
   LED Test;
@@ -270,7 +270,7 @@ TEST(LED_TC0012_State_S_BLINK_2S_Method_Blink, Negative)
  State under test  : S_BLINK_2S
  Method under test : Off
 */
-TEST(LED_TC0013_State_S_BLINK_2S_Method_Off, Negative)
+TEST(LED_State_S_BLINK_2S, Method_Off_Negative_TC0013)
 {
   /* Create an object to test */
   LED Test;
@@ -291,7 +291,7 @@ TEST(LED_TC0013_State_S_BLINK_2S_Method_Off, Negative)
  State under test  : S_BLINK_2S
  Method under test : On
 */
-TEST(LED_TC0014_State_S_BLINK_2S_Method_On, Positive)
+TEST(LED_State_S_BLINK_2S, Method_On_Positive_TC0014)
 {
   /* Create an object to test */
   LED Test;
@@ -312,7 +312,7 @@ TEST(LED_TC0014_State_S_BLINK_2S_Method_On, Positive)
  State under test  : S_OFF
  Method under test : Blink
 */
-TEST(LED_TC0015_State_S_OFF_Method_Blink, Negative)
+TEST(LED_State_S_OFF, Method_Blink_Negative_TC0015)
 {
   /* Create an object to test */
   LED Test;
@@ -333,7 +333,7 @@ TEST(LED_TC0015_State_S_OFF_Method_Blink, Negative)
  State under test  : S_OFF
  Method under test : Blink
 */
-TEST(LED_TC0016_State_S_OFF_Method_Blink, Negative)
+TEST(LED_State_S_OFF, Method_Blink_Negative_TC0016)
 {
   /* Create an object to test */
   LED Test;
@@ -354,7 +354,7 @@ TEST(LED_TC0016_State_S_OFF_Method_Blink, Negative)
  State under test  : S_OFF
  Method under test : Blink
 */
-TEST(LED_TC0017_State_S_OFF_Method_Blink, Negative)
+TEST(LED_State_S_OFF, Method_Blink_Negative_TC0017)
 {
   /* Create an object to test */
   LED Test;
@@ -375,7 +375,7 @@ TEST(LED_TC0017_State_S_OFF_Method_Blink, Negative)
  State under test  : S_OFF
  Method under test : Blink
 */
-TEST(LED_TC0018_State_S_OFF_Method_Blink, Negative)
+TEST(LED_State_S_OFF, Method_Blink_Negative_TC0018)
 {
   /* Create an object to test */
   LED Test;
@@ -396,7 +396,7 @@ TEST(LED_TC0018_State_S_OFF_Method_Blink, Negative)
  State under test  : S_OFF
  Method under test : Blink
 */
-TEST(LED_TC0019_State_S_OFF_Method_Blink, Negative)
+TEST(LED_State_S_OFF, Method_Blink_Negative_TC0019)
 {
   /* Create an object to test */
   LED Test;
@@ -417,7 +417,7 @@ TEST(LED_TC0019_State_S_OFF_Method_Blink, Negative)
  State under test  : S_OFF
  Method under test : Off
 */
-TEST(LED_TC0020_State_S_OFF_Method_Off, Negative)
+TEST(LED_State_S_OFF, Method_Off_Negative_TC0020)
 {
   /* Create an object to test */
   LED Test;
@@ -438,7 +438,7 @@ TEST(LED_TC0020_State_S_OFF_Method_Off, Negative)
  State under test  : S_OFF
  Method under test : On
 */
-TEST(LED_TC0021_State_S_OFF_Method_On, Positive)
+TEST(LED_State_S_OFF, Method_On_Positive_TC0021)
 {
   /* Create an object to test */
   LED Test;
@@ -459,7 +459,7 @@ TEST(LED_TC0021_State_S_OFF_Method_On, Positive)
  State under test  : S_ON
  Method under test : Blink
 */
-TEST(LED_TC0022_State_S_ON_Method_Blink, Negative)
+TEST(LED_State_S_ON, Method_Blink_Negative_TC0022)
 {
   /* Create an object to test */
   LED Test;
@@ -480,7 +480,7 @@ TEST(LED_TC0022_State_S_ON_Method_Blink, Negative)
  State under test  : S_ON
  Method under test : Blink
 */
-TEST(LED_TC0023_State_S_ON_Method_Blink, Positive)
+TEST(LED_State_S_ON, Method_Blink_Positive_TC0023)
 {
   /* Create an object to test */
   LED Test;
@@ -501,7 +501,7 @@ TEST(LED_TC0023_State_S_ON_Method_Blink, Positive)
  State under test  : S_ON
  Method under test : Blink
 */
-TEST(LED_TC0024_State_S_ON_Method_Blink, Positive)
+TEST(LED_State_S_ON, Method_Blink_Positive_TC0024)
 {
   /* Create an object to test */
   LED Test;
@@ -522,7 +522,7 @@ TEST(LED_TC0024_State_S_ON_Method_Blink, Positive)
  State under test  : S_ON
  Method under test : Blink
 */
-TEST(LED_TC0025_State_S_ON_Method_Blink, Negative)
+TEST(LED_State_S_ON, Method_Blink_Negative_TC0025)
 {
   /* Create an object to test */
   LED Test;
@@ -543,7 +543,7 @@ TEST(LED_TC0025_State_S_ON_Method_Blink, Negative)
  State under test  : S_ON
  Method under test : Blink
 */
-TEST(LED_TC0026_State_S_ON_Method_Blink, Negative)
+TEST(LED_State_S_ON, Method_Blink_Negative_TC0026)
 {
   /* Create an object to test */
   LED Test;
@@ -564,7 +564,7 @@ TEST(LED_TC0026_State_S_ON_Method_Blink, Negative)
  State under test  : S_ON
  Method under test : Off
 */
-TEST(LED_TC0027_State_S_ON_Method_Off, Positive)
+TEST(LED_State_S_ON, Method_Off_Positive_TC0027)
 {
   /* Create an object to test */
   LED Test;
@@ -585,7 +585,7 @@ TEST(LED_TC0027_State_S_ON_Method_Off, Positive)
  State under test  : S_ON
  Method under test : On
 */
-TEST(LED_TC0028_State_S_ON_Method_On, Negative)
+TEST(LED_State_S_ON, Method_On_Negative_TC0028)
 {
   /* Create an object to test */
   LED Test;
